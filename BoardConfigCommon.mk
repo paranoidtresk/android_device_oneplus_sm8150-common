@@ -201,6 +201,7 @@ BOARD_VNDK_VERSION := current
 
 # Wifi
 DISABLE_EAP_PROXY := true
+TARGET_INCLUDE_WIFI_EXT := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
