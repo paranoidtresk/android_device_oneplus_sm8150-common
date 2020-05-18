@@ -92,6 +92,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
+    init.opcamera.rc \
     init.qcom.rc \
     init.qcom.post_boot.sh
 
@@ -184,9 +185,9 @@ TARGET_COMMON_QTI_COMPONENTS := \
     telephony \
     wfd
 
-# tri-state-key
+# KeyHandler
 PRODUCT_PACKAGES += \
-    TriStateHandler \
+    KeyHandler \
     tri-state-key_daemon
 
 # Display Mode

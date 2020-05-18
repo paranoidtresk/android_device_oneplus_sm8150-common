@@ -20,3 +20,6 @@ type diag_device, dev_type, mlstrustedobject;
 
 # system
 type system_configs_file, system_file_type, file_type;
+
+# camera
+type aospa_data_file, file_type, data_file_type,  core_data_file_type;

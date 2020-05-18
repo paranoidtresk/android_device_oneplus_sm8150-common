@@ -1,0 +1,2 @@
+allow system_server aospa_data_file:file r_file_perms;
+allow system_server hal_cameraHIDL_hwservice:hwservice_manager find;

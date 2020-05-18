@@ -19,13 +19,16 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
-LOCAL_PACKAGE_NAME := TriStateHandler
+LOCAL_PACKAGE_NAME := KeyHandler
 
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVATE_PLATFORM_APIS := true
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_PROGUARD_ENABLED := disabled
+LOCAL_STATIC_JAVA_LIBRARIES := \
+    vendor.oneplus.camera.CameraHIDL-V1.0-java
+
+LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 include $(BUILD_PACKAGE)
